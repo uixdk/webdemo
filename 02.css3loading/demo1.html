@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简单的Loading动画</title>
+<style type="text/css">
+body{
+    background: #a0a0a0;
+}
+ 
+.loader{
+    margin: 100px auto 0;
+}
+ 
+/*为了和刚才那些没用的css区分开来，不要混到一起影响视线，
+单独写在一个选择器里面*/
+.loader{
+    border: solid 12px #ddd;
+    border-left-color: #167ede;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    -webkit-animation: simple-loader 1.1s infinite linear;
+    animation: simple-loader 1.1s infinite linear;
+}
+ 
+@-webkit-keyframes simple-loader{
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes simple-loader{
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
+
