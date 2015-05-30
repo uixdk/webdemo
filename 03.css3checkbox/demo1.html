@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<title>css3自定义复选框</title>
+<style type="text/css">
+.checkbox{
+    border: solid 2px #999;
+    border-radius: 2px;
+    height: 24px;
+    overflow: hidden;
+    position: relative;
+    width: 24px;
+}
+.checkbox input[type=checkbox]{
+    height: 24px;
+    opacity: 0;
+    position: absolute;
+    width: 24px;
+    z-index: 10;
+}
+.checkbox i{
+    background: #60b044;
+    display: none;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+}
+.checkbox input[type=checkbox]:checked+i {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="checkbox">
+    <input type="checkbox">
+    <i></i>
+<div>
+
+
+</body>
+</html>
